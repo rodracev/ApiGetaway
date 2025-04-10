@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Z2FCBH0djdjS6hTZlkBJz9gNXXvh8JzkpjREDuuuz9M=",
+  "Source": "ApiGetaway",
+  "BasePath": "_content/ApiGetaway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

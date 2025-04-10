@@ -1,0 +1,238 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/Consultarut/getconsultarut/{rut}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                "Host": "10.30.10.62",
+                "Port": 86
+                }
+            ],
+            "UpstreamPathTemplate": "/api/consultarut/{rut}",
+            "UpstreamHttpMethod": ["GET"],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "ApiKeyScheme"
+            },
+            "RouteClaimsRequirement": {
+            "role": "pharu     "
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/api/Consultarut/getconsultarut",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                "Host": "10.30.10.62",
+                "Port": 86
+                }
+            ],
+            "UpstreamPathTemplate": "/api/consultarut",
+            "UpstreamHttpMethod": ["GET"],
+            "AuthenticationOptions": {
+                "AuthenticationProviderKey": "ApiKeyScheme"
+            },
+            "RouteClaimsRequirement": {
+            "role": "pharu     "
+            }
+        },
+        {
+            "DownstreamPathTemplate": "/api/inventario/articulos/repuestosfecha",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+              {
+                "Host": "10.30.10.62",
+                "Port": 86
+              }
+            ],
+            "UpstreamPathTemplate": "/api/inventario/repuestosfecha",
+            "UpstreamHttpMethod": [ "GET" ],
+            "AuthenticationOptions": {
+              "AuthenticationProviderKey": "ApiKeyScheme"
+            },
+            "RouteClaimsRequirement": {
+              "role": "pharu     "
+            }
+          },
+          {
+              "DownstreamPathTemplate": "/api/inventario/articulos/repuestos",
+              "DownstreamScheme": "http",
+              "DownstreamHostAndPorts": [
+                {
+                  "Host": "10.30.10.62",
+                  "Port": 86
+                }
+              ],
+              "UpstreamPathTemplate": "/api/inventario/repuestos",
+              "UpstreamHttpMethod": [ "GET" ],
+              "AuthenticationOptions": {
+                "AuthenticationProviderKey": "ApiKeyScheme"
+              },
+              "RouteClaimsRequirement": {
+                "role": "pharu     "
+              }
+            },
+            {
+                "DownstreamPathTemplate": "/api/inventario/articulos/Todos",
+                "DownstreamScheme": "http",
+                "DownstreamHostAndPorts": [
+                  {
+                    "Host": "10.30.10.62",
+                    "Port": 86
+                  }
+                ],
+                "UpstreamPathTemplate": "/api/inventario/todos",
+                "UpstreamHttpMethod": [ "GET" ],
+                "AuthenticationOptions": {
+                  "AuthenticationProviderKey": "ApiKeyScheme"
+                },
+                "RouteClaimsRequirement": {
+                  "role": "pharu     "
+                }
+              },
+              {
+                  "DownstreamPathTemplate": "/api/inventario/articulos/invtid/{invtID}",
+                  "DownstreamScheme": "http",
+                  "DownstreamHostAndPorts": [
+                    {
+                      "Host": "10.30.10.62",
+                      "Port": 86
+                    }
+                  ],
+                  "UpstreamPathTemplate": "/api/inventario/invtid/{invtID}",
+                  "UpstreamHttpMethod": [ "GET" ],
+                  "AuthenticationOptions": {
+                    "AuthenticationProviderKey": "ApiKeyScheme"
+                  },
+                  "RouteClaimsRequirement": {
+                    "role": "pharu     "
+                  }
+                },
+                {
+                    "DownstreamPathTemplate": "/api/inventario/articulos/siteid/{siteID}",
+                    "DownstreamScheme": "http",
+                    "DownstreamHostAndPorts": [
+                      {
+                        "Host": "10.30.10.62",
+                        "Port": 86
+                      }
+                    ],
+                    "UpstreamPathTemplate": "/api/inventario/siteid/{siteID}",
+                    "UpstreamHttpMethod": [ "GET" ],
+                    "AuthenticationOptions": {
+                      "AuthenticationProviderKey": "ApiKeyScheme"
+                    },
+                    "RouteClaimsRequirement": {
+                      "role": "pharu     "
+                    }
+                  },
+                  {
+                      "DownstreamPathTemplate": "/api/inventario/movimientos/fecha",
+                      "DownstreamScheme": "http",
+                      "DownstreamHostAndPorts": [
+                        {
+                          "Host": "10.30.10.62",
+                          "Port": 86
+                        }
+                      ],
+                      "UpstreamPathTemplate": "/api/inventario/movimientos/fecha",
+                      "UpstreamHttpMethod": [ "GET" ],
+                      "AuthenticationOptions": {
+                        "AuthenticationProviderKey": "ApiKeyScheme"
+                      },
+                      "RouteClaimsRequirement": {
+                        "role": "pharu     "
+                      }
+                    },
+                  {
+                      "DownstreamPathTemplate": "/api/inventario/movimientos/articulo/{invtID}",
+                      "DownstreamScheme": "http",
+                      "DownstreamHostAndPorts": [
+                        {
+                          "Host": "10.30.10.62",
+                          "Port": 86
+                        }
+                      ],
+                      "UpstreamPathTemplate": "/api/inventario/movimientos/articulo/{invtID}",
+                      "UpstreamHttpMethod": [ "GET" ],
+                      "AuthenticationOptions": {
+                        "AuthenticationProviderKey": "ApiKeyScheme"
+                      },
+                      "RouteClaimsRequirement": {
+                        "role": "pharu     "
+                      }
+                    },
+                    {
+                        "DownstreamPathTemplate": "/api/inventario/movimientos/bodega/{Bodega}",
+                        "DownstreamScheme": "http",
+                        "DownstreamHostAndPorts": [
+                          {
+                            "Host": "10.30.10.62",
+                            "Port": 86
+                          }
+                        ],
+                        "UpstreamPathTemplate": "/api/inventario/movimientos/bodega/{Bodega}",
+                        "UpstreamHttpMethod": [ "GET" ],
+                        "AuthenticationOptions": {
+                          "AuthenticationProviderKey": "ApiKeyScheme"
+                        },
+                        "RouteClaimsRequirement": {
+                          "role": "pharu     "
+                        }
+                      },
+                      {
+                          "DownstreamPathTemplate": "/api/compras/fecha",
+                          "DownstreamScheme": "http",
+                          "DownstreamHostAndPorts": [
+                            {
+                              "Host": "10.30.10.62",
+                              "Port": 866
+                            }
+                          ],
+                          "UpstreamPathTemplate": "/api/compras/fecha",
+                          "UpstreamHttpMethod": [ "GET" ],
+                          "AuthenticationOptions": {
+                            "AuthenticationProviderKey": "ApiKeyScheme"
+                          },
+                          "RouteClaimsRequirement": {
+                            "role": "pharu     "
+                          }
+                        },
+                        {
+                            "DownstreamPathTemplate": "/api/compras/fechaupdate",
+                            "DownstreamScheme": "http",
+                            "DownstreamHostAndPorts": [
+                              {
+                                "Host": "10.30.10.62",
+                                "Port": 86
+                              }
+                            ],
+                            "UpstreamPathTemplate": "/api/compras/fechaupdate",
+                            "UpstreamHttpMethod": [ "GET" ],
+                            "AuthenticationOptions": {
+                              "AuthenticationProviderKey": "ApiKeyScheme"
+                            },
+                            "RouteClaimsRequirement": {
+                              "role": "pharu     "
+                            }
+                          },
+                          {
+                              "DownstreamPathTemplate": "/api/trabajadores",
+                              "DownstreamScheme": "http",
+                              "DownstreamHostAndPorts": [
+                                {
+                                  "Host": "10.30.10.62",
+                                  "Port": 83
+                                }
+                              ],
+                              "UpstreamPathTemplate": "/api/trabajadores",
+                              "UpstreamHttpMethod": [ "GET" ],
+                              "AuthenticationOptions": {
+                                "AuthenticationProviderKey": "ApiKeyScheme"
+                              },
+                              "RouteClaimsRequirement": {
+                                "role": "bc365     "
+                              }
+                            }
+    ]
+  }
